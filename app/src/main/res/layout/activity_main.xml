@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kll.autolucky.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- banner -->
+            <TextView
+                android:layout_width="64sp"
+                android:layout_height="wrap_content"
+                android:text="banner      "
+                android:singleLine="true"/>
+            <EditText
+                android:id="@+id/banner_id"
+                android:layout_width="300dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:maxLength="38"
+                android:hint="ca-app-pub-2593385554361299/6939823773"
+                android:text="ca-app-pub-2593385554361299/6939823773"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" × "/>
+            <EditText
+                android:id="@+id/banner_qty"
+                android:layout_width="28dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:maxLength="2"
+                android:hint="30"
+                android:text="30"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- interstitial -->
+            <TextView
+                android:layout_width="64sp"
+                android:layout_height="wrap_content"
+                android:text="interstitial"
+                android:singleLine="true"/>
+            <EditText
+                android:id="@+id/interstitial_id"
+                android:layout_width="300dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:maxLength="38"
+                android:hint="ca-app-pub-2593385554361299/5896057615"
+                android:text="ca-app-pub-2593385554361299/5896057615"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" × "/>
+            <EditText
+                android:id="@+id/interstitial_qty"
+                android:layout_width="26dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:maxLength="2"
+                android:hint="20"
+                android:text="20"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- timer -->
+            <TextView
+                android:layout_width="64sp"
+                android:layout_height="wrap_content"
+                android:text="timer       "
+                android:singleLine="true"/>
+            <EditText
+                android:id="@+id/delay_timer"
+                android:layout_width="50dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:maxLength="5"
+                android:hint="15000"
+                android:text="15000"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ms"/>
+        </LinearLayout>
+
+        <!-- start -->
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
